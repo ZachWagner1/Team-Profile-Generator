@@ -1,7 +1,7 @@
 const outPutCards = (employeeData) => {
-	const outPutArray = employeeData.map((employeeObj) => {
-		const { role, name, id, email, wildcard } = employeeObj;
-		return `
+  const outPutArray = employeeData.map((employeeObj) => {
+    const { role, name, id, email, wildcard } = employeeObj;
+    return `
       <div class="card m-4">
         <div class="card-header bg-primary text-white">
           <h5 class="card-title name">${name}</h5>
@@ -20,7 +20,7 @@ const outPutCards = (employeeData) => {
 };
 
 module.exports = (employeeData) => {
-	return `
+  return `
     <!DOCTYPE html>
     <html lang="en">
     <head>

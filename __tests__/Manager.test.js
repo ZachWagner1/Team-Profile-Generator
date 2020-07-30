@@ -18,8 +18,8 @@ test('check manager has office number', () => {
 
 // make sure that getOfficeNumber returns office number output string
 test("outputs string with a manager's office number", () => {
-	const manager = new Manager('Donald Lewis', 1, 'donald@mail.com', 123);
-	expect(manager.getOfficeNumber()).toEqual(expect.stringContaining((manager.officeNumber).toString()));
+  const manager = new Manager('Donald Lewis', 1, 'donald@mail.com', 123);
+  expect(manager.getOfficeNumber()).toEqual(expect.stringContaining((manager.officeNumber).toString()));
 });
 
 test("manager's role overridden to Manager", () => {

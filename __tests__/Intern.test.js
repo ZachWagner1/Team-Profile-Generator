@@ -5,9 +5,9 @@ const emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+")
 test('make sure properties and methods inherited from Employee', () => {
 	const intern = new Intern('Donald Lewis', 1, 'donald@mail.com');
 
-  expect(intern).toHaveProperty('name', expect.any(String));
-  expect(intern).toHaveProperty('id', expect.any(Number));
-  expect(intern).toHaveProperty('email', expect.stringMatching(emailRegEx));
+	expect(intern).toHaveProperty('name', expect.any(String));
+	expect(intern).toHaveProperty('id', expect.any(Number));
+	expect(intern).toHaveProperty('email', expect.stringMatching(emailRegEx));
 });
 
 // make sure that class has school property and value
